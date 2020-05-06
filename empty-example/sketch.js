@@ -60,7 +60,7 @@ function pepperoni(x,y){
 }
 
 function showpepperoni(){
-  if (topping1 == true){
+  if (topping1 == true && yummycheese == true && pizzasauce == true && dough == true ){
   pepperoni(600, 400);
   pepperoni(800, 450);
   pepperoni(720, 220);
@@ -91,7 +91,7 @@ function crust(){
 }
 
 function sauce(){
-  if (pizzasauce == true){
+  if (pizzasauce == true && dough == true){
     fill(245, 19, 2);
     noStroke();
     ellipse(700, 362, 398);
@@ -101,7 +101,7 @@ function sauce(){
 }
 
 function cheese(){
-  if (yummycheese == true){
+  if (yummycheese == true && pizzasauce == true && dough == true){
     fill(250, 215, 40);
     noStroke();
     ellipse(700, 362, 378);
