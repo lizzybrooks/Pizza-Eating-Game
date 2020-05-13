@@ -1,4 +1,4 @@
-let distance = 50;
+let big = 50
 
 let doughbutton;
 let saucebutton;
@@ -14,21 +14,27 @@ function setup() {
   createCanvas(1400, 725);
 
   doughbutton = createButton('Dough');
+  doughbutton.style('background-color', "lightblue");
+  doughbutton.style('font-size', '22px');
+  doughbutton.style('font-family', "Georgia");
   doughbutton.position(100, 100);
   doughbutton.size(200, 200);
   doughbutton.mousePressed(makecrust);
 
   saucebutton = createButton('Tomato Sauce');
+  saucebutton.style('background-color', "lightblue");
   saucebutton.position(100, 430);
   saucebutton.size(200, 200);
   saucebutton.mousePressed(makesauce);
 
   cheesebutton = createButton('Cheese');
+  cheesebutton.style('background-color', "lightblue");
   cheesebutton.position(1100, 100);
   cheesebutton.size(200, 200);
   cheesebutton.mousePressed(makecheese);
 
   pepperonibutton = createButton('Pepperoni');
+  pepperonibutton.style('background-color', "lightblue");
   pepperonibutton.position(1100, 430);
   pepperonibutton.size(200, 200);
   pepperonibutton.mousePressed(makepepperoni);
